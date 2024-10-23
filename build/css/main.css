@@ -179,3 +179,48 @@ body {
     width: 80%;
   }
 }
+
+.banner {
+  display: inline-block;
+  border: 2px solid #f27b36;
+  border-radius: 40px;
+  padding: 1rem 4rem;
+  text-align: center;
+  font-family: "Noto Sans JP", sans-serif;
+  background-color: white;
+  position: sticky;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0 auto;
+  text-decoration: none;
+}
+.banner:hover {
+  transition: all 0.3s;
+  background-color: #f27b36;
+  color: white;
+  transform: translateX(-50%) scale(1.1);
+}
+.banner:hover .text, .banner:hover .highlight {
+  color: white !important;
+}
+.banner .banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner .banner-content .icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.banner .banner-content .text {
+  font-size: 1.5rem;
+  color: #f27b36;
+  margin-right: 10px;
+}
+.banner .banner-content .highlight {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #f27b36;
+}

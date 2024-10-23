@@ -1,0 +1,19 @@
+// variables imports
+@use '../abstracts/variables' as *;
+
+.faq {
+  margin: 2rem auto;
+  
+  &__container {
+    
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 70%;
+
+      @include mq('s') {
+        width: 80%;
+      }
+    }
+  }
+}

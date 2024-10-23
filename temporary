@@ -1,0 +1,19 @@
+Gmail以外のSMTPサーバー（例えば、k@acmee.co.jp というドメインのメールサーバー）に接続するためには、そのサーバーのSMTP設定が必要になります。以下の情報を確認し、適切な設定を行う必要があります。
+
+SMTPサーバーのホスト名（例: smtp.acmee.co.jp）
+SMTPポート（通常は 587 や 465 など）
+SMTP認証（サーバーによってはユーザー名やパスワードが必要）
+暗号化方式（TLSまたはSSL）
+例えば、k@acmee.co.jp のアドレスに対して適切なSMTPサーバーが smtp.acmee.co.jp で、ポートが 587 だと仮定した場合、以下のようにコードを修正できます。
+
+
+$mail->isSMTP();                                            //Send using SMTP
+$mail->Host       = 'smtp.acmee.co.jp';                     //Set the SMTP server to send through
+$mail->Username   = 'k@acmee.co.jp';                        //SMTP username
+$mail->Password   = 'your_password';                        //SMTP password
+$mail->SMTPAuth   = true;                                   //Enable SMTP authentication
+$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         //Enable TLS encryption
+$mail->Port       = 587;                                    //TCP port to connect to
+正確な情報は、acmee.co.jp のメールサーバー管理者に問い合わせるか、設定マニュアルを確認することで得られます。
+
+「困難は、試練ではなく、前進のための教訓である。」

@@ -1,0 +1,181 @@
+/** TABLE OF CONTENTS 
+-----------------------
+-- REMINDER: abstract/variables.scss needs to be brought into components that require it! 
+
+-- NEW: vendor imports
+-- base imports
+-- component imports
+-- layout imports
+**/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+/* TAILWIND: GRAY 900 */
+/* TAILWIND: GRAY 400 */
+/* TAILWIND: BLUE 400 */
+/* TAILWIND: INDIGO 400 */
+/* TAILWIND: GREEN 600 */
+/* TAILWIND: RED 600 */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Open Sans", apple-system, sans-serif;
+  background: #FFFFFF;
+  box-sizing: border-box;
+  margin: 2rem 0;
+}
+
+.notFoundWrapper {
+  margin: 4rem 0;
+  text-align: center;
+}
+.notFoundWrapper img {
+  display: block;
+  max-width: 600px;
+  margin: auto;
+}
+
+.ad__imgContainer img {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+}
+@media screen and (max-width: 480px) {
+  .ad__imgContainer img {
+    width: 80%;
+  }
+}
+
+.contact {
+  max-width: 960px;
+  margin: 2rem auto;
+}
+.contact .contactContainer {
+  text-align: center;
+}
+.contact .contactContainer h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.contact .contactContainer p {
+  font-size: 14px;
+  color: #ff7a29;
+}
+.contact .formContainer {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.contact .formContainer form {
+  display: flex;
+  flex-direction: column;
+}
+.contact .formContainer form .eachForm {
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 480px) {
+  .contact .formContainer form .eachForm {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+.contact .formContainer form .eachForm label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.contact .formContainer form .eachForm label .required {
+  color: #ff7a29;
+}
+.contact .formContainer form .eachForm input,
+.contact .formContainer form .eachForm select,
+.contact .formContainer form .eachForm textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.contact .formContainer form .eachForm input:focus,
+.contact .formContainer form .eachForm select:focus,
+.contact .formContainer form .eachForm textarea:focus {
+  border-color: #ff7a29;
+}
+.contact .formContainer form .eachForm select {
+  appearance: none;
+}
+.contact .formContainer form button {
+  background-color: #ff7a29;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.contact .formContainer form button:hover {
+  background-color: #e66b1e;
+}
+
+.faq {
+  margin: 2rem auto;
+}
+.faq__container img {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+}
+@media screen and (max-width: 480px) {
+  .faq__container img {
+    width: 80%;
+  }
+}

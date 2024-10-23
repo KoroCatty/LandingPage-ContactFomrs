@@ -1,0 +1,79 @@
+// variables imports
+@use '../abstracts/variables' as *;
+
+.contact {
+  max-width: 960px;
+  margin: 2rem auto;
+
+  .contactContainer {
+    text-align: center;
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 14px;
+      color: #ff7a29; // Orange color for required field notice
+    }
+  }
+
+  .formContainer {
+    max-width: 600px;
+    margin: 0 auto;
+
+    form {
+      display: flex;
+      flex-direction: column;
+
+      .eachForm {
+        margin-bottom: 20px;
+
+        @include mq('s') {
+          width: 80%;
+          margin: 0 auto;
+        }
+
+        label {
+          display: block;
+          font-size: 14px;
+          margin-bottom: 5px;
+          .required {
+            color: #ff7a29;
+          }
+        }
+
+        input,
+        select,
+        textarea {
+          width: 100%;
+          padding: 10px;
+          font-size: 16px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          &:focus {
+            border-color: #ff7a29;
+          }
+        }
+
+        select {
+          appearance: none; // Hide native select dropdown arrow
+        }
+      }
+
+      button {
+        background-color: #ff7a29;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        &:hover {
+          background-color: #e66b1e;
+        }
+      }
+    }
+  }
+}

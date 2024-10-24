@@ -1,8 +1,8 @@
-@use '../abstracts/' as *;
-@use './reset' as *;
+@use "../abstracts/" as *;
+@use "./reset" as *;
 
 body {
-  font-family: $primaryFont; 
+  font-family: $primaryFont;
   background: $primaryColor;
   box-sizing: border-box;
   margin: 2rem 0;

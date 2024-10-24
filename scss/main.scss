@@ -11,20 +11,20 @@
 **/
 
 // base imports
-@use './base/base';
+@use "./base/base";
 
 // page imports
-@use './pages/notfound';
+@use "./pages/notfound";
 
 // component imports
-@use './components/ad';
-@use './components/contact';
-@use './components/faq';
-@use './components/banner';
+@use "./components/ad";
+@use "./components/contact";
+@use "./components/faq";
+@use "./components/banner";
 
 // variables imports
-@use './abstracts/variables' as *;
+@use "./abstracts/variables" as *;
 
 // layout imports
-@use './layout/footer';
-@use './layout/header';
+@use "./layout/footer";
+@use "./layout/header";

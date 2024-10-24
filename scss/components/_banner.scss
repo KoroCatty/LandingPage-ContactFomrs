@@ -4,7 +4,7 @@
   border-radius: 40px;
   padding: 1rem 4rem;
   text-align: center;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   background-color: white;
   position: sticky;
   bottom: 1rem;
@@ -20,7 +20,8 @@
     transform: translateX(-50%) scale(1.1);
 
     // 子要素のテキストカラーも変える
-    .text, .highlight {
+    .text,
+    .highlight {
       color: white !important;
     }
   }
@@ -29,7 +30,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     .icon {
       width: 40px;
       height: 40px;

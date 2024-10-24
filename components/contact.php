@@ -40,18 +40,26 @@ session_start();
 
       <div class="eachForm">
         <label for="role">役職 <span class="required">※</span></label>
-        <select name="role" id="role" required>
-          <option value="代表">代表</option>
-          <option value="担当者">担当者</option>
-        </select>
+        <div class="selectWrapper">
+          <select name="role" id="role" required>
+            <option value="代表">代表</option>
+            <option value="担当者">部長・課長</option>
+            <option value="主任">リーダー</option>
+            <option value="その他">その他</option>
+          </select>
+        </div>
       </div>
 
       <div class="eachForm">
         <label for="inquiry">相談されたい内容</label>
-        <select name="inquiry" id="inquiry">
-          <option value="広告費">広告費</option>
-          <option value="その他">その他</option>
-        </select>
+        <div class="selectWrapper">
+          <select name="inquiry" id="inquiry">
+            <option value="広告費">広告費</option>
+            <option value="広告費">代理店の変更を検討</option>
+            <option value="広告費">向いている広告</option>
+            <option value="その他">その他</option>
+          </select>
+        </div>
       </div>
 
       <div class="eachForm">
@@ -69,4 +77,3 @@ session_start();
     <?php unset($_SESSION['status']); ?>
   }
 </script>
-
